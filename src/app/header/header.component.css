@@ -15,7 +15,7 @@ background: #0A2640;
 }
 .navbar{
 position: absolute;
-width: 1200px;
+width: 1260px;
 height: 42px;
 left: 100px;
 top: 56px;
@@ -37,7 +37,7 @@ color: #FFFFFF;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    gap: 40px; 
+    gap: 40px;
     position: absolute;
     left: 64.39%;
     right: 0.7%;
@@ -75,17 +75,18 @@ cursor: pointer;
 
 
 .introField{
-    display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-padding: 0px;
-gap: 93px;
-position: absolute;
-width: 1200px;
-height: 423px;
-left: 50px;
-top: 162px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 93px;
+
+  position: absolute;
+  width: 1200px;
+  height: 423px;
+  left: 150px;
+  top: 162px;
 }
 
 .introSpace1{
@@ -194,8 +195,9 @@ cursor: pointer;
 }
 
 .introSpace2{
-    width: 493.86px;
-height: 423px;
+  width: 493.86px;
+  height: 423px;
+
 }
 
 #rectangle1{
@@ -206,21 +208,66 @@ top: 0px;
 }
 
 #rectangle2{
-width: 192.18px;
-height: 165.34px;
-left: 1.07px;
-top: 257.66px;
-background: rgba(255, 255, 255, 0.18);
-backdrop-filter: blur(68.7107px);
-/* Note: backdrop-filter has minimal browser support */
-border-radius: 15.0305px;
+  width: 192.18px;
+  height: 165.34px;
+  left: 1.07px;
+  top: 257.66px;
 }
 
 #rectangle3{
-width: 261.96px;
-height: 165.34px;
-left: 231.9px;
-top: 257.66px;
+  width: 261.96px;
+  height: 165.34px;
+  left: 231.9px;
+  top: 257.66px;
+}
 
+.logoWall{
+  position: absolute;
+  width: 1173px;
+  height: 93px;
+  left: 113px;
+  top: 631px;
+}
+
+.serviceTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 842px;
+  height: 184px;
+  left: 359px;
+  top: 852px;
+}
+
+.subHead{
+  width: 118px;
+  height: 32px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #777777;
+}
+
+.mainHead{
+  width: 842px;
+  height: 144px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 
 }
