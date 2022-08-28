@@ -19,6 +19,10 @@ width: 1260px;
 height: 42px;
 left: 100px;
 top: 56px;
+  display: flex;
+  align-content: space-between;
+  justify-content: flex-end;
+
 
 }
 
@@ -33,44 +37,25 @@ color: #FFFFFF;
 
 .navbarList{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 40px;
-    position: absolute;
-    left: 64.39%;
-    right: 0.7%;
-    top: 2.38%;
-    bottom: 2.38%;
+  width: 488px;
+  justify-content: space-around;
+
 }
 
 .navText{
-width: 61px;
-height: 28px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 28px;
-display: flex;
-align-items: center;
 color: #FFFFFF;
 cursor: pointer;
 text-decoration: none;
 }
 
-.logIn{
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 8px 40px;
-width: 128px;
-height: 40px;
-background: #FFFFFF;
-border: 2px solid #FFFFFF;
-border-radius: 24px;
-cursor: pointer;
+.resume{
+  background: #FFFFFF;
+  cursor: pointer;
 }
 
 
