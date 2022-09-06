@@ -13,6 +13,17 @@ margin-top: 56px;
 }
 .logoText{
   color: rgb(255,105,180);
+  background-image: linear-gradient(124deg, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 35%, rgba(255,255,255,1) 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 .navbarList{
     display: flex;
@@ -30,13 +41,13 @@ margin-top: 56px;
 font-family: 'Manrope';
 font-style: normal;
 font-weight:800;
-font-size: 17px;
+font-size: 19px;
 line-height: 28px;
   color: rgb(255,105,180);
 cursor: pointer;
 text-decoration: none;
 margin-top: 10px;
-  background-image: linear-gradient(124deg, rgba(255,105,180,1) 0%, rgba(255,255,255,1) 35%, rgba(255,127,80,1) 100%);
+  background-image: linear-gradient(124deg, rgba(255,255,255,1) 0%, rgba(220,220,220,1) 35%, rgba(255,255,255,1) 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -45,15 +56,17 @@ margin-top: 10px;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  animation: textclip 2s linear infinite;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .resume{
-  background: #7DF9FF;
+  background: transparent;
   cursor: pointer;
   border-radius: 10px;
-  border: 1px groove ;
-  border-color: #FF5349;
+  border: 1px solid ;
+  border-color: #DCDCDC;
   padding: 10px;
 }
 
@@ -65,8 +78,16 @@ margin-top: 10px;
 .introField{
   margin-left: 300px;
   margin-top: 80px;
+  margin-bottom: 200px;
 }
 
+.aboutField{
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+}
+.aboutText{
+}
 .introSpaceText{
   margin: 0px;
   }
@@ -79,6 +100,15 @@ line-height: 74px;
 color: #FFFFFF;
   margin-bottom: 10px;
 
+}
+.subIntroHeading{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 74px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .introHeading2{
