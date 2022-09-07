@@ -78,16 +78,27 @@ margin-top: 10px;
 .introField{
   margin-left: 300px;
   margin-top: 80px;
-  margin-bottom: 200px;
+margin-bottom: 105px;}
+
+.field{
+  margin-top: 0px;
+  padding-top: 100px;
+  margin-bottom: 0px;
 }
 
-.aboutField{
-  margin-top: 80px;
-  margin-bottom: 80px;
+.imgSpace{
+  width: 500px;
+  height: 500px;
+ 
+}
 
+img{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: #0A2640;
 }
-.aboutText{
-}
+
 .introSpaceText{
   margin: 0px;
   }
@@ -212,3 +223,5 @@ font-weight: lighter;
     margin-left: 300px;
   }
 }
+
+
