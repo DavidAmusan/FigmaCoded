@@ -14,10 +14,10 @@
   <div>
   <ul>
     <li class="iconList">
-      <span (mouseover)="spin=true" (mouseout)="spin=false"><fa-icon [icon]="envelope" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon></span>
-      <span (mouseover)="spin1=true" (mouseout)="spin1=false"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></span>
-      <fa-icon (mouseover)="spin2=true" (mouseout)="spin2=false"[icon]="instagram" size="lg" [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin2"></fa-icon>
-      <fa-icon (mouseover)="spin3=true" (mouseout)="spin3=false"[icon]="linkedin" size="lg" [spin]="spin3" [styles]="{ stroke: 'white', color: 'white' }"></fa-icon>
+      <a href="davidamusan16@gmail.com" (mouseover)="spin=true" (mouseout)="spin=false" target="_blank"><fa-icon [icon]="envelope" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon></a>
+      <a href="https://github.com/DavidAmusan"(mouseover)="spin1=true" (mouseout)="spin1=false" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
+      <a href="https://www.instagram.com/amusan.david/" target="_blank"><fa-icon (mouseover)="spin2=true" (mouseout)="spin2=false"[icon]="instagram" size="lg" [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin2"></fa-icon></a>
+      <a href="https://www.linkedin.com/in/david-amusan-085b191/" target="_blank" ><fa-icon (mouseover)="spin3=true" (mouseout)="spin3=false"[icon]="linkedin" size="lg" [spin]="spin3" [styles]="{ stroke: 'white', color: 'white' }"></fa-icon></a>
 
     </li>
   </ul>
@@ -89,6 +89,21 @@
         <div class="picsum-img-wrapper">
           <div class="imgSpace">
             <img src="/assets/RECIPEBOOK.png">
+            <div class="featuredPro">
+              <h3 class="subHead workText">Featured Project</h3>
+              <p class="subHead" style="text-align:right;">
+                Hotel Website
+              </p>
+            </div>
+          <div class="imgDesc">
+            <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+          </div>
+          </div>        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="imgSpace">
+            <img src="/assets/cmpDataBinding.png">
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
