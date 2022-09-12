@@ -1,22 +1,29 @@
 
-<div class="navbar">
+<div class="navbar" @fade >
     <h1 class="logoText">D</h1>
     <ul class="navbarList">
+      <li>
         <a class="navText" href="#about">About</a>
         <a class="navText" href="#works">Work</a>
+        <a class="navText" href="#works">Contact</a>
       <a class="navText resume" style="color: black; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
+      </li>
     </ul>
 </div>
 <div orientation="right" class="rightLines">
+  <div>
   <ul>
-    <li>
-      <fa-icon [icon]="github"></fa-icon>
+    <li class="iconList">
+      <span (mouseover)="spin=true" (mouseout)="spin=false"><fa-icon [icon]="envelope" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon></span>
+      <span (mouseover)="spin1=true" (mouseout)="spin1=false"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></span>
+      <fa-icon (mouseover)="spin2=true" (mouseout)="spin2=false"[icon]="instagram" size="lg" [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin2"></fa-icon>
+      <fa-icon (mouseover)="spin3=true" (mouseout)="spin3=false"[icon]="linkedin" size="lg" [spin]="spin3" [styles]="{ stroke: 'white', color: 'white' }"></fa-icon>
+
     </li>
   </ul>
-<div class="vl">
+  </div>
 </div>
-</div>
-    <section class="introField">
+    <section class="introField" @slideInOut>
             <div class="introSpaceText">
               <p class="subHead">Hey, I am</p>
             <h1 class="introHeading">David Amusan</h1>
@@ -26,20 +33,20 @@
             </div>
 
 
-      <a class="navText resume" style="color: black" href="#about">Lets get Started!</a>
+      <a class="navText resume" style="color: black; margin: 0px;" href="#about">Lets get Started!</a>
     </section>
 
-  <section class="introField field" id="about">
+  <section class="introField field" id="about" @fade>
     <h2 class="subIntroHeading">About Me</h2>
     <div class="row">
-    <p class="subHead col-7" style="font-size: 20px">Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development
+    <p class="subHead col-6" style="font-size: 20px">Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development
       started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog
       button taught me a lot about HTML & CSS!<br><br> Fast-forward to today, and I’ve had the privilege of working at an advertising agency,
       a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible,
       inclusive products and digital experiences at Upstatement for a variety of clients. I also recently launched a course
       that covers everything you need to build a web app with the Spotify API using Node & React.</p>
-    <div class="col-5">
-      <p>Picture</p>
+    <div class="col-6">
+      <img src="/assets/IMG_3016.png" style="width: 79%;">
     </div>
     </div>
   </section>
@@ -47,43 +54,54 @@
   <section class="introField " id="works"  style="padding: 100px;">
     <h2 class="subIntroHeading">Works</h2>
     <div class="imgSpace">
-      <img src="/assets/HOTELWEBSITE.png">
-      <div class="featuredPro">
-        <h3 class="subHead workText">Featured Project</h3>
-        <p class="subHead" style="text-align:right;">
-          Hotel Website
-        </p>
-      </div>
-    <div class="imgDesc">
-      <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-    </div>
+    <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="!showNavigationIndicators">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="imgSpace">
+            <img src="/assets/HOTELWEBSITE.png">
+            <div class="featuredPro">
+              <h3 class="subHead workText">Featured Project</h3>
+              <p class="subHead" style="text-align:right;">
+                Hotel Website
+              </p>
+            </div>
+          <div class="imgDesc">
+            <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+          </div>
+          </div>        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="imgSpace">
+            <img src="/assets/XAMPDATA.png" >
+            <div class="featuredPro">
+              <h3 class=" workText subHead" style="text-align:left;">Featured Project</h3>
+              <p class="subHead" >
+                Hotel Website
+              </p>
+            </div>
+          <div class="imgDesc" style="background-color: #9198e5;">
+            <p class="subHead">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+          </div>
+          </div>        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <div class="imgSpace">
+            <img src="/assets/RECIPEBOOK.png">
+            <div class="featuredPro">
+              <h3 class="subHead workText">Featured Project</h3>
+              <p class="subHead" style="text-align:right;">
+                Hotel Website
+              </p>
+            </div>
+          <div class="imgDesc">
+            <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+          </div>
+          </div>        </div>
+      </ng-template>
+    </ngb-carousel>
     </div>
 
 
-    <div class="imgSpace">
-      <img src="/assets/XAMPDATA.png" style="grid-column: 2/8;">
-      <div class="featuredPro" style="grid-column: 1/2;">
-        <h3 class=" workText subHead" style="text-align:left;">Featured Project</h3>
-        <p class="subHead" >
-          Hotel Website
-        </p>
-      </div>
-    <div class="imgDesc" style="grid-column: 1/2;">
-      <p class="subHead">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-    </div>
-    </div>
-
-
-    <div class="imgSpace">
-      <img src="/assets/RECIPEBOOK.png">
-      <div class="featuredPro">
-        <h3 class="subHead workText">Featured Project</h3>
-        <p class="subHead" style="text-align:right;">
-          Hotel Website
-        </p>
-      </div>
-    <div class="imgDesc">
-      <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
-    </div>
-    </div>
   </section>
