@@ -77,8 +77,18 @@ margin-top: 10px;
 .introField{
   margin-left: 300px;
   margin-top: 80px;
-margin-bottom: 105px;}
-
+margin-bottom: 130px;}
+.vl{
+  border-left: 2px solid #DCDCDC;
+  height: 100px;
+}
+.rightLines{
+  position: fixed;
+  right: 42.65px;
+  top: 41.5rem;
+  z-index: 1;
+  padding: 1px 10px;
+}
 .field{
   margin-top: 0px;
   padding-top: 100px;
