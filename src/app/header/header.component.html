@@ -10,7 +10,7 @@
       </li>
     </ul>
 </div>
-<div orientation="right" class="rightLines">
+<div orientation="right" class="rightLines" @fade>
   <div>
   <ul>
     <li class="iconList">
@@ -120,3 +120,31 @@
 
 
   </section>
+
+
+<section class=" contactForm">
+  <h2 class="subIntroHeading d-flex justify-content-center">Contact Me Anytime</h2>
+  <form>
+    <div class="d-flex flex-row justify-content-evenly mb-3" style="gap: 5px">
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="First Name" name="name" id='name' required />
+        <label for="name" class="form__label">First Name</label>
+      </div>
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Last Name" name="lastname" id='lastname' required />
+        <label for="lastname" class="form__label">Last Name</label>
+      </div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-evenly mb-3">
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Email" name="email" id='email' required />
+        <label for="email" class="form__label">Email</label>
+      </div>
+      <div >
+        <textarea placeholder="Talk to me"></textarea>
+      </div>
+    </div>
+  </form>
+</section>
+
