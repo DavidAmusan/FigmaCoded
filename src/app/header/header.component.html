@@ -124,22 +124,22 @@
 
 <section class=" contactForm">
   <h2 class="subIntroHeading d-flex justify-content-center">Contact Me Anytime</h2>
-  <form>
+  <form autocomplete="off" autocomplete="chrome-off">
     <div class="d-flex flex-row justify-content-evenly mb-3" style="gap: 5px">
       <div class="form__group field">
-        <input type="input" class="form__field" placeholder="First Name" name="name" id='name' required />
-        <label for="name" class="form__label">First Name</label>
+        <input type="input" class="form__field" placeholder="feild1"  id='feild1' required   name="feild1" autocomplete="off" />
+        <label for="feild1" class="form__label">Your First Name</label>
       </div>
       <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Last Name" name="lastname" id='lastname' required />
+        <input type="input" class="form__field" placeholder="Last Name" name="lastname" id='lastname' required autocomplete="do-not-autofill" />
         <label for="lastname" class="form__label">Last Name</label>
       </div>
     </div>
 
     <div class="d-flex flex-row justify-content-evenly mb-3">
       <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Email" name="email" id='email' required />
-        <label for="email" class="form__label">Email</label>
+        <input type="input" class="form__field" placeholder="Email" name="yourmail" id='yourmail' required autocomplete="off" />
+        <label for="yourmail" class="form__label">Email</label>
       </div>
       <div >
         <textarea placeholder="Talk to me"></textarea>
