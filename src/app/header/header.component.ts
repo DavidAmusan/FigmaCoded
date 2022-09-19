@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -45,17 +46,18 @@ export class HeaderComponent implements OnInit {
   spin1=false;
   spin2=false;
   spin3=false;
+  opendrop=false;
   show:boolean=false;
   images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
-github=faGithub
-instagram=faInstagram
-linkedin=faLinkedin
-envelope=faEnvelope
-constructor(config: NgbCarouselConfig) {
-  // customize default values of carousels used by this component tree
-  config.showNavigationArrows = true;
-  config.showNavigationIndicators = true;
-}
+  github=faGithub
+  instagram=faInstagram
+  linkedin=faLinkedin
+  envelope=faEnvelope
+  constructor(config: NgbCarouselConfig) {
+    // customize default values of carousels used by this component tree
+    config.showNavigationArrows = true;
+    config.showNavigationIndicators = true;
+  }
   ngOnInit(): void {
 
   }
@@ -65,5 +67,7 @@ constructor(config: NgbCarouselConfig) {
   showit(){
     this.show=true
   }
-  
+  openDropDown(){
+    this.opendrop=!this.opendrop
+  }
 }

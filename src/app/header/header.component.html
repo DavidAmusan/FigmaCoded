@@ -1,14 +1,28 @@
-
 <div class="navbar" @fade >
-    <h1 class="logoText">D</h1>
-    <ul class="navbarList">
-      <li>
+  <h1 class="logoText">D</h1>
+  <ul class="navbarList">
+    <li>
+        <span class="notDrop">
         <a class="navText" href="#about">About</a>
         <a class="navText" href="#works">Work</a>
         <a class="navText" href="#works">Contact</a>
       <a class="navText resume" style="color: black; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
-      </li>
-    </ul>
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="navbutton" (click)="openDropDown()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="mb-5" style="margin-right: 35px; margin-bottom:20px" @fade  *ngIf="opendrop==true">
+  <ul class="drop" style="flex-direction: row-reverse;">
+    <li class="d-flex  flex-column " >
+      <a class="navText" href="#about">About</a>
+      <a class="navText" href="#works">Work</a>
+      <a class="navText" href="#works">Contact</a>
+      <a class="navText resume" style="color: black; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
+    </li>
+  </ul>
 </div>
 <div orientation="right" class="rightLines" @fade>
   <div>
@@ -57,7 +71,8 @@
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
-                Hotel Website
+                Hotel Website<br>
+                Vanilla JS and CSS
               </p>
             </div>
           <div class="imgDesc">
@@ -72,7 +87,8 @@
             <div class="featuredPro">
               <h3 class=" workText subHead" >Featured Project</h3>
               <p class="subHead" style="text-align: right;">
-                User Creation/Bio Data Collection
+                User Creation/Bio Data Collection<br>
+                PHP Code Igniter, MySQL, XAMP.
               </p>
             </div>
           <div class="imgDesc" style="background-color: #9198e5;">
@@ -87,7 +103,7 @@
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
-                Recipe book<br> Using Angular 14
+                Recipe book<br> Angular 14
               </p>
             </div>
           <div class="imgDesc">
@@ -102,7 +118,8 @@
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
-                Angular Server Store
+                Angular Server Store<br>
+                Angular 14
               </p>
             </div>
           <div class="imgDesc">

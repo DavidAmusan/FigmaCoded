@@ -28,7 +28,6 @@ margin-top: 56px;
 }
 .navbarList{
     display: flex;
-  width: 488px;
   justify-content: space-around;
   margin-right: 100px;
 }
@@ -258,13 +257,42 @@ font-weight: lighter;
   text-align: right;
   margin-bottom: 0px;
 }
+.drop{
+  display: none;
+  transition: all .5s ease-in-out;
+  height: 0;
+}
+#navbutton{
+  display: none;
+}
 
 
 @media  (max-width: 600px) {
   .introField{
-    margin-left: 100px;
+    margin-left: 75px;
+  }
+
+  #navbutton{
+    display: flex;
+  }
+  .notDrop{
+    display: none;
+  }
+  .drop{display: flex;}
+  .rightLines{
+    display: none;
+  }
+  .navbar{
+    margin-left: 65px;
+  }
+  .navbarList{
+    margin-right: 65px;
+  }
+  .navText{
+    margin-top: 5px;
   }
 }
+
 
 @media (min-width: 600px) {
   .introField{
