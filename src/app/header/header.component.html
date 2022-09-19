@@ -10,7 +10,7 @@
       </li>
     </ul>
 </div>
-<div orientation="right" class="rightLines">
+<div orientation="right" class="rightLines" @fade>
   <div>
   <ul>
     <li class="iconList">
@@ -115,3 +115,31 @@
 
 
   </section>
+
+
+<section class=" contactForm">
+  <h2 class="subIntroHeading d-flex justify-content-center">Contact Me Anytime</h2>
+  <form autocomplete="off" autocomplete="chrome-off">
+    <div class="d-flex flex-row justify-content-evenly mb-3" style="gap: 50px">
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="feild1"  id='feild1' required   name="feild1" autocomplete="off" />
+        <label for="feild1" class="form__label">Full Name</label>
+      </div>
+      <div class="form__group field " >
+        <input type="input" class="form__field" placeholder="Email" name="yourmail" id='yourmail' required autocomplete="off" />
+        <label for="yourmail" class="form__label">Email</label>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="form__group field col-8" >
+        <textarea  class="form__field" placeholder="Talk to me" name="textarea" id='textarea' style="background: #DCDCDC"></textarea>
+        <label for="textarea" class="form__label" style="color: #f4f4f4">Send a Message</label>
+      </div>
+      <div class="col-4" style="margin-top: 55px">
+        <a class="navText resume " style="color: black; padding: 20px 40px; font-size: 20px" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Send<i class="fa fa-download" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </form>
+</section>
+
