@@ -4,6 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {faSatellite} from '@fortawesome/free-solid-svg-icons'
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 import {
   trigger,
@@ -53,6 +54,7 @@ export class HeaderComponent implements OnInit {
   instagram=faInstagram
   linkedin=faLinkedin
   envelope=faEnvelope
+  satelite=faSatellite
   constructor(config: NgbCarouselConfig) {
     // customize default values of carousels used by this component tree
     config.showNavigationArrows = true;
