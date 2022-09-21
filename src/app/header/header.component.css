@@ -211,13 +211,13 @@ color: #FFFFFF;
 }
 
 
-~ .form__label {
+.form__label {
   position: absolute;
   top: 0;
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color:  #11998e;
+  color:  #f4f4f4;
   font-weight:700;
 }
 .form__field:focus{
