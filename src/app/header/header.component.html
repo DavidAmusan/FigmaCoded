@@ -3,10 +3,10 @@
   <ul class="navbarList">
     <li>
         <span class="notDrop">
-        <a class="navText" href="#about">About</a>
-        <a class="navText" href="#works">Work</a>
-        <a class="navText" href="#works">Contact</a>
-      <a class="navText resume" style="color: black; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
+          <a class="navText" href="#about"><span style="color: #f4f4f4; -webkit-text-fill-color: #f4f4f4;">i.</span>About</a>
+        <a class="navText" href="#works"><span style="color: #f4f4f4; -webkit-text-fill-color: #f4f4f4;">ii.</span>Work</a>
+        <a class="navText" href="#works"><span style="color: #f4f4f4; -webkit-text-fill-color: #f4f4f4;">iii.</span>Contact</a>
+          <a class="navText resume" style="color: #bb0a1e; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
       </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="navbutton" (click)="openDropDown()">
         <span class="navbar-toggler-icon"></span>
@@ -17,7 +17,7 @@
 <div class="mb-5" style="margin-right: 35px; margin-bottom:20px" @fade  *ngIf="opendrop==true">
   <ul class="drop" style="flex-direction: row-reverse;">
     <li class="d-flex  flex-column " >
-      <a class="navText" href="#about">About</a>
+      <a class="navText" href="#about">i.<span style="color: #f4f4f4">About</span></a>
       <a class="navText" href="#works">Work</a>
       <a class="navText" href="#works">Contact</a>
       <a class="navText resume" style="color: black; margin-top: 0px;" href="https://drive.google.com/file/d/1pMy2noTWOefw4r2-xqFkfRRW6stPGpp9/view?usp=sharing" target="_blank">Resume<i class="fa fa-download" aria-hidden="true"></i></a>
@@ -28,21 +28,21 @@
   <div>
   <ul>
     <li class="iconList">
-      <a href="davidamusan16@gmail.com" (mouseover)="spin=true" (mouseout)="spin=false" target="_blank"><fa-icon [icon]="envelope" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon></a>
-      <a href="https://github.com/DavidAmusan"(mouseover)="spin1=true" (mouseout)="spin1=false" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
-      <a href="https://www.instagram.com/amusan.david/" target="_blank"><fa-icon (mouseover)="spin2=true" (mouseout)="spin2=false"[icon]="instagram" size="lg" [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin2"></fa-icon></a>
-      <a href="https://www.linkedin.com/in/david-amusan-085b191/" target="_blank" ><fa-icon (mouseover)="spin3=true" (mouseout)="spin3=false"[icon]="linkedin" size="lg" [spin]="spin3" [styles]="{ stroke: 'white', color: 'white' }"></fa-icon></a>
+      <a href="davidamusan16@gmail.com" (mouseover)="spin=true" (mouseout)="spin=false" target="_blank"><fa-icon [icon]="envelope" size="lg" class="Icon"  [styles]="{ stroke: '#dc143c;', color: '#bb0a1e' }" [spin]="spin" ></fa-icon></a>
+      <a href="https://github.com/DavidAmusan"(mouseover)="spin1=true" (mouseout)="spin1=false" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: '#bb0a1e' }" [spin]="spin1"></fa-icon></a>
+      <a href="https://www.instagram.com/amusan.david/" target="_blank"><fa-icon (mouseover)="spin2=true" (mouseout)="spin2=false"[icon]="instagram" size="lg" [styles]="{ stroke: 'white', color: '#bb0a1e' }" [spin]="spin2"></fa-icon></a>
+      <a href="https://www.linkedin.com/in/david-amusan-085b191/" target="_blank" ><fa-icon (mouseover)="spin3=true" (mouseout)="spin3=false"[icon]="linkedin" size="lg" [spin]="spin3" [styles]="{ stroke: 'white', color: '#bb0a1e' }"></fa-icon></a>
 
     </li>
   </ul>
   </div>
 </div>
-    <section class="introField" @slideInOut>
+    <section class="introField" >
             <div class="introSpaceText">
-              <p class="subHead">Hey, I am</p>
-            <h1 class="introHeading">David Amusan</h1>
-              <h1 class="introHeading introHeading2">I make web dreams a reality</h1>
-            <p class= "subHead" style="font-size: 25px; margin-bottom: 55px">I am a software engineer currently specializing in the front end development of web Apps <br>and Web Pages that meet
+              <p class="subHead" @fade>Hey, I am</p>
+            <h1 class="introHeading" @slideInOut>David Amusan</h1>
+              <h1 class="introHeading introHeading2" @fade>I make web dreams a reality</h1>
+            <p class= "subHead" style="font-size: 25px; margin-bottom: 55px" @slideInOut>I am a software engineer currently specializing in the front end development of web Apps <br>and Web Pages that meet
             the expectations of both the end user and stakeholders. </p>
             </div>
 
@@ -53,7 +53,20 @@
   <section class="introField field" id="about" @fade>
     <h2 class="subIntroHeading">About Me</h2>
     <div class="row">
-    <p class="subHead col-6" style="font-size: 20px">My front end development journey has been short but rigorous. After graduating with a 4.1 cgpa in computer science in 2021, I started my first post-first degree job as an intern in september. And landed my first full role in October<br><br> Fast-forward to today, I am working as an Angular front end developer in my agile team at Systemspecs, Human Manager division. I have grown and matured, taking on my workload as well as helping my colleagues with theirs. I am excited to see what the wide world of web development and its technologies have in store for me.</p>
+      <div class="col-6">
+    <p class="subHead" style="font-size: 20px">My front end development journey has been short but rigorous.
+      After graduating with a 4.1 cgpa in computer science in 2021, I started my first post-first degree job as an intern
+      in september. And landed my first full role in October</p><p class="subHead" style="font-size: 20px"> Fast-forward to today, I am working as an Angular front end
+        developer in my agile team at <a style="color:#bb0a1e" href="https://systemspecs.com.ng/" target="_blank">Systemspecs</a>, Human Manager division. I have grown and matured, taking on my workload as well as
+      helping my colleagues with theirs. I am excited to see what the wide world of web development and its technologies have in
+        store for me.</p><p class="subHead" style="font-size: 20px"> Here are a few technologies I’ve been working with recently:</p><p class="subHead"><span class="d-flex" style="line-height: 35px"><fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span class="languages">Javascript (ES6+)</span>
+        <fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span style="margin-left: 10px;">TypeScript</span><br></span>
+      <span class="d-flex" style="line-height: 35px"><fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span class="languages">Angular</span>
+        <fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span style="margin-left: 10px;">CSS & SCSS</span><br></span>
+      <span class="d-flex" style="line-height: 35px"> <fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span class="languages">Git</span>
+        <fa-icon [icon]="satelite" size="sm" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin" ></fa-icon><span style="margin-left: 10px;">Figma</span></span>
+      </p>
+    </div>
     <div class="col-6">
       <img src="/assets/IMG_3016.png" style="width: 79%;">
     </div>
@@ -63,11 +76,11 @@
   <section class="introField " id="works"  style="padding: 100px;">
     <h2 class="subIntroHeading">Works</h2>
     <div class="imgSpace">
-    <ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="!showNavigationIndicators">
+    <ngb-carousel [showNavigationArrows]="!showNavigationArrows" [showNavigationIndicators]="!showNavigationIndicators">
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
           <div class="imgSpace">
-            <img src="/assets/HOTELWEBSITE.png">
+            <img src="/assets/hotelWeb.jpg">
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
@@ -77,6 +90,8 @@
             </div>
           <div class="imgDesc">
             <p class="subHead" style="text-align:right;">A hotel landing page website built with vanilla JS and html. Built at the early stages of my development journey. Fully responsive.</p>
+            <p style="margin-left: 20px"><a href="https://github.com/DavidAmusan/Unused-Freelance-Website" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
+            </p>
           </div>
           </div>        </div>
       </ng-template>
@@ -93,13 +108,15 @@
             </div>
           <div class="imgDesc" style="background-color: #9198e5;">
             <p class="subHead" style="text-align: right;">A user creation and LogIn form built with html, php code-igniter, and mySQL. Fully coded myself. Collects user data from the form and sends it to the mySQL table. After registering the user can then log in using php code igniter authentication paired with the mySQL table. </p>
+            <p style="margin-left: 20px"><a href="https://github.com/DavidAmusan/PHP-CodeIgniter-SQL-HTML-Form" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
+          </p>
           </div>
           </div>        </div>
       </ng-template>
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
           <div class="imgSpace">
-            <img src="/assets/RECIPEBOOK.png">
+            <img src="/assets/recipelogo.jpeg">
             <div class="featuredPro">
               <h3 class="subHead workText">Featured Project</h3>
               <p class="subHead" style="text-align:right;">
@@ -108,6 +125,8 @@
             </div>
           <div class="imgDesc">
             <p class="subHead" style="text-align:right;">An online book created using angular. This is to store recipes created by the user locally using Angular. Same logic used in online marketplaces to add items to cart before sending to the back-end. </p>
+            <p style="margin-left: 20px"><a href="https://github.com/DavidAmusan" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
+            </p>
           </div>
           </div>        </div>
       </ng-template>
@@ -123,7 +142,10 @@
               </p>
             </div>
           <div class="imgDesc">
-            <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+            <p class="subHead" style="text-align:right;">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual
+              Studio Marketplace, Package Control, Atom Package Manager, and npm. </p>
+            <p style="margin-left: 20px"><a href="https://github.com/DavidAmusan" target="_blank"><fa-icon [icon]="github" size="lg" class="Icon"  [styles]="{ stroke: 'white', color: 'white' }" [spin]="spin1"></fa-icon></a>
+            </p>
           </div>
           </div>        </div>
       </ng-template>

@@ -19,7 +19,12 @@ body{
     background-attachment: fixed;
     overflow:auto;
 }
-
+.carousel-control-prev {
+  left: -175px;
+}
+.carousel-control-next {
+  right: -154px;
+}
 *{
     box-sizing: border-box;
     padding: 0;
